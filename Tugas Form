@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ <fieldset>
+ <form>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style-form.css">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+  </head>
+  <body>
+<div class="container">
+      <div id="header">
+      <center>
+        <h1>Form Pendaftaran Mahasiswa Baru</h1>
+        <p>Tahun Ajaran 2010/2011</p>
+      </div>
+
+
+<form action="/action_page.php">
+  <label for="nodaftar">No. Pendaftaran:</label>
+  <input type="number" id="nodaftar" name="nodaftar" min="1" max="1000">
+</form>
+
+  
+<p> </p>
+
+<form action="/action_page.php">
+  <label for="prodi">Program Studi yang dipilih:</label>
+  <select id="prodi" name="prodi">
+    <option value="sistem informasi">Sistem Informasi</option>
+    <option value="teknik informatika">Teknik Informatika</option>
+    <option value="sistem komputer">Sistem Komputer</option>
+  </select>  
+  
+  <p>
+  <label for="nama">Nama Siswa:</label>
+  <input type="text" id="nama" name="nama"><br><br>
+  </p>
+ 
+ <p>Jenis Kelamin:</p>
+
+  <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+  <label for="laki-laki">Laki-laki</label> <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+  <label for="perempuan">Perempuan</label><br>
+
+ <p>Tempat Lahir:
+ <select>
+  <option value="">-- Select city -- </option>
+  <option value="surabaya">Surabaya Raya</option>
+  <option value="luar surabaya">Luar Surabaya</option>
+</select>
+ </p> 
+ 
+  <p>
+Tanggal Lahir: <input type="date" id="date" />
+  </p>
+
+<p> </p>
+
+<form action="/action_page.php">
+  <label for="agama">Agama:</label>
+  <select id="agama" name="agama">
+    <option value="islam">Islam</option>
+    <option value="kristen">Kristen</option>
+    <option value="katolik">Katolik</option>
+    <option value="hindu">Hindu</option>
+    <option value="buddha">Buddha</option>
+    <option value="konghucu">Konghucu</option>
+  </select>
+  
+<p>
+<label for="alamat">Alamat Lengkap:</label>
+    <textarea id="alamat" name="alamat" rows="3" cols="50"></textarea>
+    </p>
+
+<p>
+<label for="phone">No. Telepon:</label>
+
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+<small>Format: 123-456-7890</small>
+</p>
+
+<p>
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email">
+</p>
+
+<center>
+<input type="reset" value="Clear form" />
+<input type="submit" value="Submit now" />
+
+</fieldset>
+</form>
+</body>
+</html>
